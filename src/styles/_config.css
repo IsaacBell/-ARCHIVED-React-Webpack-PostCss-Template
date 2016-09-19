@@ -1,0 +1,71 @@
+:root {
+  /* Color */
+  --color-main:        #3ac3dc;
+  --color-alt:         #f6a941;
+  --color-green:       #cbd64e;
+  --color-blue:  		   #2fc3de;
+  --db-green: 			   #3ADC8A;
+  --db-red: 			  	 #DC3A3A;
+  --color-light:       #ebebeb;
+  --color-dark:        #404040;
+
+  /* Size */
+  --max-width:           1100px;
+  --body-bg-color:     #fff;
+  --break-small:         550px;
+  --break-medium:        800px;
+  --break-large:         1100px;
+
+  /* Typography */
+  --font-size:           responsive 15px 17px;
+  --font-range:          var(--break-small) var(--break-large);
+  --font-main:           normal 1em "Avenir Next", sans-serif;
+  --font-alt:            500 1em "Avenir Next", sans-serif;
+  --font-serif:          normal 1em "Rockwell", serif;
+  --font-btn:            normal 1em "Avenir Next", sans-serif;
+  --font-admin:          400 1em "Lato", sans-serif;
+
+  /* Headings */
+  --heading-font:        var(--font-alt);
+  --heading-weight:      500; /* bold || normal || 300 */
+
+  /* Header */
+  --header-height:       auto;
+  --header-bg-color:     var(--color-main);
+  --header-nav-lined:    "false"; /* "true" || "false" */
+  --header-font-color: #fff;
+
+  /* Sidebar */ 
+  --sidebar-bg-color:       var(--color-alt);
+  --sidebar-font-color:   #fff;
+  --sidebar-icon-color:     var(--color-alt); 
+  --sidebar-border-color: rgba(#fff, 0.5); 
+
+  /* Footer */
+  --footer-height:       auto;
+  --footer-bg-color:     var(--color-dark);
+  --footer-nav-lined:    "false"; /* "true" || "false" */
+  --footer-font-color:   #fff;
+
+  /* Buttons */
+  --btn-border-radius:   0;
+  --btn-border-width:    0;    /* 0 for no border */
+  --btn-border-color:    shade(--color-main, 10%);
+  --btn-bg-color:        var(--color-main);
+  --btn-font-color:    #fff;
+  --btn-font:            var(--font-main);
+  --btn-font-size:       18px;
+  --btn-font-weight:     500; /* bold || normal */
+  --btn-font-case:       none;   /* none || uppercase || lowercase || capitalize */
+  --btn-border-side:     "none"; /* "all" || "bottom" || "horizontal" || "vertical" || "left" || "right" || "top" || "none" */
+
+  /* Inputs */
+  --input-border-radius:   0;
+  --input-bg-color:      #fff;
+  --input-border-color:    var(--color-light);
+  --input-border-width:    0; /* 0 for no border */
+  --input-font:            var(--font-btn);
+  --input-font-color:      var(--color-dark);
+  --input-font-size:       1em;
+}
+

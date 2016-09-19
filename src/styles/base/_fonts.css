@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,300,700');
+
+/* Avenir Next Regular */
+@font-face {
+  font-family: 'Avenir Next';
+  src: url('/fonts/avenir-next-regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Avenir Next Demi Bold */
+@font-face {
+  font-family: 'Avenir Next';
+  src: url('/fonts/avenir-next-demi-bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Avenir Next Regular Italic */
+@font-face {
+  font-family: 'Avenir Next';
+  src: url('/fonts/avenir-next-regular-italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+
+/* Avenir Next Medium */
+@font-face {
+  font-family: 'Avenir Next';
+  src: url('/fonts/avenir-next-medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+/* Avenir Next Ultra Light */
+@font-face {
+  font-family: 'Avenir Next';
+  src: url('/fonts/avenir-next-ultra-light.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+/* Rockwell */
+@font-face {
+  font-family: "Rockwell";
+  src: url('/fonts/rockwell.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

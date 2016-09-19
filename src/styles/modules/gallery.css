@@ -1,0 +1,31 @@
+.photo-gallery {
+	padding: 20px 2%;
+	.gallery-container {
+		.gallery-title {
+			text-align: center;
+			color: var(--color-main);
+		}
+		.gallery-image {
+			width: 25%;
+			float: left;
+			height: 150px;
+			position: relative;
+			padding: 1%;
+			cursor: pointer;
+			display: block;
+			.image-holder {
+				width: 100%;
+				height: 100%;
+				background-size: cover;
+				background-position: center center;
+			}
+			@include small {
+				width: 33.333333%;
+			}
+			@include mini {
+				width: 50%;
+			}
+		}
+	}	
+}
+

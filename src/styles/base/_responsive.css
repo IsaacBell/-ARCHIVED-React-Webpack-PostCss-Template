@@ -1,0 +1,58 @@
+@define-mixin mini { 
+  @media all and (max-width: --var(break-small)) { @mixin-content; }
+}
+@define-mixin small { 
+  @media all and (max-width: --var(break-medium)) { @mixin-content; }
+}
+@define-mixin medium {
+  @media all and (min-width: --var(break-medium)) 
+             and (max-width: --var(break-large)) { @mixin-content; }
+}
+@define-mixin big { 
+  @media all and (min-width: --var(break-medium)) { @mixin-content; }
+}
+@define-mixin breakpx $min, $max {
+  @media all and (min-width: $min) 
+             and (max-width: $max) { @mixin-content; }
+}
+
+@define-mixin bgcover $url  { 
+    background-image: url('$url'); 
+    /*-ms-behavior: url('/bg.htc');*/
+    background-size: cover; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+}
+
+/* Hide on large screens */
+.conceal {
+  @mixin big {
+    display: none !important;
+  }
+  @mixin small {
+    display: inherit;
+  }
+}
+
+/* Reveal on medium and large screens */
+.reveal {
+  @mixin big {
+    display: inherit;
+  }
+  @mixin small {
+    display: none !important;
+  }
+}
+
+/* Reveal only on large screens */
+.reveal-m {
+  @mixin big {
+    display: inherit;
+  }
+  @mixin small {
+    display: none !important;
+  }
+  @mixin medium {
+    display: none !important;
+  }
+}
