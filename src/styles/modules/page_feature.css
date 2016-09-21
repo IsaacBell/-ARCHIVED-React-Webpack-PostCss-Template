@@ -3,7 +3,7 @@
 	.constrain {
 		max-width: 900px;
 	}
-	@mixin breakpx(0, 970px) {
+	@mixin breakpx 0, 970px {
 		overflow: hidden;
 	}
 	&.Left {

@@ -43,9 +43,9 @@
     outline-width: 0;
   }
   &:hover {
-    background: color(var(--btn-bg-color), shade 10%); 
+    background: color( var(--btn-bg-color) , shade 10%); 
     text-decoration: none; 
-    border-color: color(var(--btn-border-color), shade 10%); 
+    border-color: color( var(--btn-border-color) , shade 10%); 
   }
   &.white {
     background: #fff;
@@ -78,7 +78,7 @@
   &.Alternate, &.alternate {
     background: var(--color-alt);
     &:hover {
-      background: color(var(--color-alt), shade 10%);
+      background: color( var(--color-alt) , shade 10%);
     }
   }
 }
@@ -95,7 +95,7 @@
   &.colored {
     color: $color-main;
     &:hover {
-      color: color(var(--color-main), shade 10%); 
+      color: color( var(--color-main) , shade 10%); 
     }
   }
 }

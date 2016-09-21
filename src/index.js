@@ -1,1 +1,3 @@
-import './styles/app.css'
+require('babel-polyfill');
+require('./styles/app.css');
+

@@ -50,7 +50,7 @@
   /* Buttons */
   --btn-border-radius:   0;
   --btn-border-width:    0;    /* 0 for no border */
-  --btn-border-color:    shade(--color-main, 10%);
+  --btn-border-color:    color( var(--color-main) , shade 10%);
   --btn-bg-color:        var(--color-main);
   --btn-font-color:    #fff;
   --btn-font:            var(--font-main);

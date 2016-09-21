@@ -71,7 +71,7 @@ header.main {
     -webkit-transition: .2s ease-out;
     transition: .2s ease-out;
     padding: 27px 20px 0 20px;
-    @mixin breakpx(799px, 870px) {
+    @mixin breakpx 799px, 870px {
       padding: 27px 12px 0 12px;
     }
     span {
@@ -280,7 +280,7 @@ header.main {
           display: block;
           height: 100%;
           padding-top: 27px;
-          @mixin breakpx(799px, 870px) {
+          @mixin breakpx 799px, 870px {
             margin-right: 12px;
           }
           &:hover {
