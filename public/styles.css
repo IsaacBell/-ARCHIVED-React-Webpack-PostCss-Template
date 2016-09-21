@@ -440,7 +440,6 @@ figure {
  */
 
 hr {
-  -moz-box-sizing: content-box;
   box-sizing: content-box;
   height: 0;
 }
@@ -571,9 +570,7 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
  */
 
 input[type="search"] {
-  -webkit-appearance: textfield; /* 1 */
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box; /* 2 */
+  -webkit-appearance: textfield; /* 1 */ /* 2 */
   box-sizing: content-box;
 }
 
@@ -710,8 +707,6 @@ body {
 }
 
 body * {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box; 
 }
 
@@ -841,6 +836,7 @@ ul.tabs li.select {
 .richtext p a, .richtext ol a, .richtext ul a, .richtext blockquote a, .richtext-block p a, .richtext-block ol a, .richtext-block ul a, .richtext-block blockquote a {
   text-decoration: none;
   color: #3ac3dc;
+  -webkit-transition: color .4s;
   transition: color .4s
 }
 
@@ -908,6 +904,11 @@ ul.tabs li.select {
   height: 100%;
 }
 
+::-moz-selection {
+  color: #fff;
+  background: #3ac3dc; 
+}
+
 ::selection {
   color: #fff;
   background: #3ac3dc; 
@@ -941,8 +942,6 @@ a:hover {
 }
 
 canvas { display: block; vertical-align: bottom; }
-
-/*@import 'https://fonts.googleapis.com/css?family=Lato:400,300,700';*/
 
 /* Avenir Next Regular */
 
@@ -1302,8 +1301,8 @@ header.main {
   width: 100%;
   top: 0;
   -webkit-transition-property: background-color,-webkit-box-shadow;
+  -webkit-transition-property: background-color,box-shadow;
   transition-property: background-color,box-shadow;
-  -webkit-box-shadow: none;
   box-shadow: none;
   -webkit-transition: .2s ease-out;
   transition: .2s ease-out;
@@ -1445,6 +1444,7 @@ header.main.dashboard .right .help {
   margin-right: 35px;
   position: relative;
   bottom: 7px;
+  -webkit-transition: color 300ms ease;
   transition: color 300ms ease;
 }
 
@@ -1458,6 +1458,7 @@ header.main.dashboard .right .icon-search {
   font-size: 30px;
   position: relative;
   top: 2px;
+  -webkit-transition: color 300ms ease;
   transition: color 300ms ease;
   display: inline-block;
   width: 30px;
@@ -1492,6 +1493,7 @@ header.main.dashboard .right .profile .text {
 header.main.dashboard .right .profile .arrow {
   font-size: 18px;
   margin-left: 10px;
+  -webkit-transition: color 300ms ease;
   transition: color 300ms ease;
   color: #fff;
   text-decoration: none;
@@ -1541,7 +1543,6 @@ header.main.dashboard .right .profile .dropdown ul li:last-of-type {
 
 header.main.white {
   background-color: #fff;
-  -webkit-box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
 }
 
@@ -1661,10 +1662,6 @@ footer.main #back-to-top {
   top: -65px;
   width: 50px;
   height: 50px;
-  -webkit-border-radius: 25px;
-  -moz-border-radius: 25px;
-  -ms-border-radius: 25px;
-  -o-border-radius: 25px;
   border-radius: 25px;
   text-align: center;
   text-decoration: none;
@@ -1891,10 +1888,6 @@ ul.social-links li {
 
 input[type="email"], input[type="text"], input[type="password"], textarea {
   background: #fff; 
-  -webkit-border-radius: 0; 
-  -moz-border-radius: 0; 
-  -ms-border-radius: 0; 
-  -o-border-radius: 0; 
   border-radius: 0; 
   border-style: solid;
   color: #404040;
@@ -1915,10 +1908,6 @@ p.note {
   background: #3ac3dc;
   display: inline-block;
   padding: 6px 30px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
   border-radius: 5px;
   color: #fff;
   font-weight: 300;
@@ -1973,10 +1962,6 @@ p.note.loading {
 .survey-form-block form .field input {
   background: #3ac3dc;
   color: #fff;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
   border-radius: 5px;
   padding: 12px 10px 7px 10px;
   width: 90%;

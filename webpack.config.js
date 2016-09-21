@@ -75,7 +75,7 @@ module.exports = {
         extensions: map.media
     }),
     require('precss')(),
-    // require('postcss-cssnext')(),
+    require('postcss-cssnext')(),
     require('postcss-reporter')(),
     // require('postcss-nested')(),
     require('postcss-responsive-type')(),
