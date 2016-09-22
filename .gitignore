@@ -3,3 +3,4 @@ node_modules/
 _notes.txt
 public/*.hot-update.js
 public/*.hot-update.json
+public/*.map
