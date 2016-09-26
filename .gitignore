@@ -4,3 +4,5 @@ _notes.txt
 public/*.hot-update.js
 public/*.hot-update.json
 public/*.map
+public/*.css.map
+public/*.js.map
