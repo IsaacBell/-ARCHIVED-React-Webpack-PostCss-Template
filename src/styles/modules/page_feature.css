@@ -1,4 +1,4 @@
-.page-feature {
+.page-feature-block {
 	padding: 50px 0;
 	.constrain {
 		max-width: 900px;
@@ -10,7 +10,7 @@
 		.wrapper {
 			.icon {
 				left: -1%;
-				@mixin small {
+				@media (--small) {
 					left: 0;
 				}
 			}
@@ -21,7 +21,7 @@
 				float: right;
 				.btn {
 					right: -4%;
-					@mixin small {
+					@media (--small) {
 						right: 0;
 					}
 				}
@@ -32,7 +32,7 @@
 		.wrapper {
 			.icon {
 				right: -1%;
-				@mixin small {
+				@media (--small) {
 					right: 0;
 				}
 			}
@@ -43,7 +43,7 @@
 				float: left;
 				.btn {
 					left: -4%;
-					@mixin small {
+					@media (--small) {
 						left: 0;
 					}
 				}
@@ -56,7 +56,8 @@
 			width: 170px;
 			height: 170px;
 			top: -50px;
-			@mixin small {
+			z-index: 10;
+			@media (--small) {
 				width: 100px;
 				height: 100px;
 				top: -40px;
@@ -66,7 +67,7 @@
 			/*@mixin bgcover("");*/
 			width: 55%;
 			height: 400px;
-			@mixin small {
+			@media (--small) {
 				width: 100%;
 				float: none;
 				height: 250px;
@@ -79,7 +80,7 @@
 			padding: 20px 4%;
 			height: 400px;
 			position: relative;
-			@mixin small {
+			@media (--small) {
 				float: none;
 				width: 100%;
 				height: auto;
@@ -97,7 +98,7 @@
 			.btn {
 				position: absolute;
 				bottom: 20px;
-				@mixin small {
+				@media (--small) {
 					position: static;
 					bottom: 0;
 				}

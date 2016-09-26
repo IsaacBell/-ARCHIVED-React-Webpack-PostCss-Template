@@ -14,31 +14,7 @@
   text-align: center; 
   cursor: pointer; 
   border-width: var(--btn-border-width);
-  /*
-  @if $btn-border-side == "bottom" {
-    border-bottom: $btn-border-width solid $btn-border-color;
-  }
-  @else if $btn-border-side == "horizontal" {
-    border-left: $btn-border-width solid $btn-border-color;
-    border-right: $btn-border-width solid $btn-border-color;
-  }
-  @else if $btn-border-side == "vertical" {
-    border-top: $btn-border-width solid $btn-border-color;
-    border-bottom: $btn-border-width solid $btn-border-color;
-  }
-  @else if $btn-border-side == "left" {
-    border-left: $btn-border-width solid $btn-border-color;
-  }
-  @else if $btn-border-side == "right" {
-    border-right: $btn-border-width solid $btn-border-color;
-  }
-  @else if $btn-border-side == "top" {
-    border-top: $btn-border-width solid $btn-border-color;
-  }
-  @else if $btn-border-side == "all" {
-    border: $btn-border-width solid $btn-border-color;
-  }
-  */
+  
   &:focus {
     outline-width: 0;
   }
@@ -93,7 +69,7 @@
     }
   }
   &.colored {
-    color: $color-main;
+    color: var(--color-main);
     &:hover {
       color: color( var(--color-main) , shade 10%); 
     }

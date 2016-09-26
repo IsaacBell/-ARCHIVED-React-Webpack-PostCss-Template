@@ -1,4 +1,7 @@
 :root {
+  /* Custom Selectors */
+  @custom-selector :--text h1, h2, h3, h4, h5, h6, p, b, u, i, ol, ul, blockquote, strike, em, small, strong, pre;
+
   /* Color */
   --color-main:        #3ac3dc;
   --color-alt:         #f6a941;
@@ -11,7 +14,7 @@
 
   /* Size */
   --max-width:           1100px;
-  --body-bg-color:     #fff;
+  --body-bg-color:       #fff;
   --break-small:         550px;
   --break-medium:        800px;
   --break-large:         1100px;
@@ -33,13 +36,13 @@
   --header-height:       auto;
   --header-bg-color:     var(--color-main);
   --header-nav-lined:    "false"; /* "true" || "false" */
-  --header-font-color: #fff;
+  --header-font-color:   #fff;
 
   /* Sidebar */ 
   --sidebar-bg-color:       var(--color-alt);
-  --sidebar-font-color:   #fff;
+  --sidebar-font-color:     #fff;
   --sidebar-icon-color:     var(--color-alt); 
-  --sidebar-border-color: rgba(#fff, 0.5); 
+  --sidebar-border-color:   rgba(#fff, 0.5); 
 
   /* Footer */
   --footer-height:       auto;
@@ -52,7 +55,7 @@
   --btn-border-width:    0;    /* 0 for no border */
   --btn-border-color:    color( var(--color-main) , shade 10%);
   --btn-bg-color:        var(--color-main);
-  --btn-font-color:    #fff;
+  --btn-font-color:      #fff;
   --btn-font:            var(--font-main);
   --btn-font-size:       18px;
   --btn-font-weight:     500; /* bold || normal */
@@ -61,7 +64,7 @@
 
   /* Inputs */
   --input-border-radius:   0;
-  --input-bg-color:      #fff;
+  --input-bg-color:        #fff;
   --input-border-color:    var(--color-light);
   --input-border-width:    0; /* 0 for no border */
   --input-font:            var(--font-btn);

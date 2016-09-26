@@ -1,4 +1,4 @@
-footer.main {
+footer {
   height: var(--footer-height);
   font: var(--font-alt);
   font-size: 15px;
@@ -11,7 +11,7 @@ footer.main {
   &.dashboard {
     background: #333;
   }
-  #back-to-top {
+  .back-to-top {
     display: block;
     position: absolute;
     left: 2%;
@@ -38,11 +38,11 @@ footer.main {
   .grid-row {
     .unit1of3 {
       text-align: center;
-      @mixin small {
+      @media (--small) {
         margin-bottom: 40px;
       }
       .right {
-        @mixin small {
+        @media (--small) {
           margin-bottom: 0;
         }
       }

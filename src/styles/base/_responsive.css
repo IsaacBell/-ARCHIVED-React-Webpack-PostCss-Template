@@ -1,16 +1,19 @@
-@define-mixin mini { 
-  @media all and (max-width: --var(break-small)) { @mixin-content; }
-}
-@define-mixin small { 
-  @media all and (max-width: --var(break-medium)) { @mixin-content; }
-}
-@define-mixin medium {
-  @media all and (min-width: --var(break-medium)) 
-             and (max-width: --var(break-large)) { @mixin-content; }
-}
-@define-mixin big { 
-  @media all and (min-width: --var(break-medium)) { @mixin-content; }
-}
+/* The idea of cssnext is to rely on code that will work in browsers tomorrow. 
+var() cannot be used in custom-media queries since :root{} is a dom element (html). 
+https://github.com/MoOx/postcss-cssnext/issues/253
+*/
+$break-small:  var(--break-small);
+$break-medium: var(--break-medium);
+$break-medium: var(--break-medium);
+$break-large:  var(--break-large);
+$break-medium: var(--break-medium);
+
+@custom-media --mini all   and (max-width: $break-small);
+@custom-media --small all  and (max-width: $break-medium);
+@custom-media --medium all and (min-width: $break-medium) 
+                           and (max-width: $break-large);
+@custom-media --big all    and (min-width: $break-medium);
+
 @define-mixin breakpx $min, $max {
   @media all and (min-width: $min) 
              and (max-width: $max) { @mixin-content; }
@@ -26,33 +29,33 @@
 
 /* Hide on large screens */
 .conceal {
-  @mixin big {
+  @media (--big) {
     display: none !important;
   }
-  @mixin small {
+  @media (--small) {
     display: inherit;
   }
 }
 
 /* Reveal on medium and large screens */
 .reveal {
-  @mixin big {
+  @media (--big) {
     display: inherit;
   }
-  @mixin small {
+  @media (--small) {
     display: none !important;
   }
 }
 
 /* Reveal only on large screens */
 .reveal-m {
-  @mixin big {
+  @media (--big) {
     display: inherit;
   }
-  @mixin small {
+  @media (--small) {
     display: none !important;
   }
-  @mixin medium {
+  @media (--medium) {
     display: none !important;
   }
 }

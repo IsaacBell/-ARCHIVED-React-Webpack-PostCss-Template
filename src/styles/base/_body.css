@@ -1,6 +1,7 @@
 body {
   font: var(--font-main);
   background-color: var(--body-bg-color); 
+  background-image: url('https://s3.amazonaws.com/isaac-bell-store/sayagata-400px.png');
   color: var(--color-dark);
   overflow-x: hidden;
 }
@@ -9,26 +10,6 @@ body * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; 
-}
-
-.constrain {
-  max-width: var(--max-width); 
-  width: 100%; 
-  position: relative; 
-  margin: 0 auto !important;
-  padding: 0 2%;
-  height: 100%;
-  &::after {
-    content: "."; 
-    visibility: hidden; 
-    display: block; 
-    height: 0; 
-    clear: both;
-  }
-}
-
-body > #ui-datepicker-div {
-  background: #fff;
 }
 
 .tabs-container {
@@ -107,65 +88,6 @@ ul.tabs {
    display: block; 
    height: 0; 
    clear: both;
-}
-
-.richtext, .richtext-block {
-  p, ol, ul, blockquote {
-    margin-bottom: 20px;
-    font: var(--font-main);
-    line-height: 1.2em;
-    strong, b {
-      font-weight: bold;
-    }
-    em, i {
-      font-style: italic;
-    }
-    a {
-      text-decoration: none;
-      color: var(--color-main);
-      transition: color .4s;
-      &:hover {
-        color: var(--color-alt);
-      }
-    }
-  }
-  blockquote {
-    width: 80%;
-    margin: 0 auto 20px auto;
-    border-left: 3px solid var(--color-main);
-    padding: 10px 2%;
-    p {
-      font: var(--font-serif);
-      color: var(--color-main);
-      font-size: 1.5em;
-      line-height: 1.4em;
-    }
-  }
-  h6 {
-    font-weight: 700;
-  }
-  li {
-    margin-bottom: 5px;
-    &:last-of-type {
-      margin-bottom: 0;
-    }
-  }
-  ul {
-    list-style-type: disc;
-    padding-left: 20px;
-    ul, ol {
-      padding-left: 30px;
-      margin: 5px 0;
-    }
-  }
-  ol {
-    list-style-type: decimal;
-    padding-left: 20px;
-    ul, ol {
-      padding-left: 30px;
-      margin: 5px 0;
-    }
-  }
 }
 
 .table {

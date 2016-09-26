@@ -6,13 +6,15 @@
   transition: .2s ease-in;
   -webkit-transition-property: background-color;
   transition-property: background-color;
-  &.home {
-    height: 600px;
-    height: 100vh;
-    padding: 0;
-    @mixin small {
-      height: auto;
-    }
+  padding: 0;
+  height: 600px;
+  height: 100vh;
+  padding: 0;
+  @media (--small) {
+    height: auto;
+  }
+  @media (--small) {
+    height: auto;
   }
   .gray-bar {
     height: 50px;
@@ -22,6 +24,8 @@
 }
 
 .header-banner {
+  height: 100%;
+  height: 100vh;
   padding: 180px 2%;
   text-align: center;
   .richtext {
@@ -37,17 +41,17 @@
     }
   }
   &.subpage {
-    @mixin big {
+    @media (--big) {
       padding: 120px 2%;
     }
   }
-  @mixin big {
+  @media (--big) {
     padding: 0 2%;
     height: 100%;
   }
 }
 
-header.main {
+.main {
   color: var(--header-font-color);
   padding: 0;
   z-index: 10;
@@ -81,7 +85,7 @@ header.main {
       background-color: shade(var(--color-alt), 20%);
     }
   }
-  @mixin small {
+  @media (--small) {
     height: 50px;
   }
   &.dashboard {
@@ -238,12 +242,13 @@ header.main {
     padding-top: 9px;
     padding-left: 20px;
     img {
-      width: 225px;
-      @mixin small {
+      /*width: 225px;*/
+      height: 70px;
+      @media (--small) {
         width: 170px;
       }
     }
-    @mixin small {
+    @media (--small) {
       float: none;
       width: auto;
       padding-left: 9px;

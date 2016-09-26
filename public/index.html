@@ -8,410 +8,230 @@
 <body>
   <script src="bundle.js"></script>
 
-  <div id="top" class="page" role="document">
-    <header role="banner">
-      <h1>HTML5 Test Page</h1>
-      <p>This is a test page filled with common HTML elements to be used to provide visual feedback whilst building CSS systems and frameworks.</p>
+  <div class="header-wrapper">
+    <header class="main white">
+      <a href="#" class="logo-link">
+        <img src="https://s3.amazonaws.com/isaac-bell-store/logo_placeholder.png" alt="">
+      </a>
+      <nav class="reveal">
+        <ul>
+          <li>
+            <a href="#">Login</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
     </header>
-    <nav role="navigation">
-      <ul>
-        <li>
-          <a href="#text">Text</a>
-          <ul>
-            <li><a href="#text__headings">Headings</a></li>
-            <li><a href="#text__paragraphs">Paragraphs</a></li>
-            <li><a href="#text__blockquotes">Blockquotes</a></li>
-            <li><a href="#text__lists">Lists</a></li>
-            <li><a href="#text__hr">Horizontal rules</a></li>
-            <li><a href="#text__tables">Tabular data</a></li>
-            <li><a href="#text__code">Code</a></li>
-            <li><a href="#text__inline">Inline elements</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#embedded">Embedded content</a>
-          <ul>
-            <li><a href="#embedded__images">Images</a></li>
-            <li><a href="#embedded__audio">Audio</a></li>
-            <li><a href="#embedded__video">Video</a></li>
-            <li><a href="#embedded__canvas">Canvas</a></li>
-            <li><a href="#embedded__meter">Meter</a></li>
-            <li><a href="#embedded__progress">Progress</a></li>
-            <li><a href="#embedded__svg">Inline SVG</a></li>
-            <li><a href="#embedded__iframe">IFrames</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#forms">Form elements</a>
-          <ul>
-            <li><a href="#forms__input">Input fields</a></li>
-            <li><a href="#forms__select">Select menus</a></li>
-            <li><a href="#forms__checkbox">Checkboxes</a></li>
-            <li><a href="#forms__radio">Radio buttons</a></li>
-            <li><a href="#forms__textareas">Textareas</a></li>
-            <li><a href="#forms__html5">HTML5 inputs</a></li>
-            <li><a href="#forms__action">Action buttons</a></li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
-    <main role="main">
-      <section id="text">
-        <header><h1>Text</h1></header>
-        <article id="text__headings">
-          <header>
-            <h1>Headings</h1>
-          </header>
-          <div>
-            <h1>Heading 1</h1>
-            <h2>Heading 2</h2>
-            <h3>Heading 3</h3>
-            <h4>Heading 4</h4>
-            <h5>Heading 5</h5>
-            <h6>Heading 6</h6>
+    <div class="header-banner" data-parallax="scroll" style="background:black;">
+      <div class="table">
+        <div class="table-cell">
+          <div class="richtext">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+              Vitae consequatur mollitia, quibusdam eius facilis quaerat!</p>
           </div>
-          <footer><p><a href="#top">[Top]</a></p></footer>
-        </article>
-        <article id="text__paragraphs">
-          <header><h1>Paragraphs</h1></header>
-          <div>
-            <p>A paragraph (from the Greek paragraphos, “to write beside” or “written beside”) is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose.</p>
-          </div>
-          <footer><p><a href="#top">[Top]</a></p></footer>
-        </article>
-        <article id="text__blockquotes">
-          <header><h1>Blockquotes</h1></header>
-          <div>
-            <blockquote>
-              <p>A block quotation (also known as a long quotation or extract) is a quotation in a written document, that is set off from the main text as a paragraph, or block of text.</p>
-              <p>It is typically distinguished visually using indentation and a different typeface or smaller size quotation. It may or may not include a citation, usually placed at the bottom.</p>
-              <cite><a href="#!">Said no one, ever.</a></cite>
-            </blockquote>
-          </div>
-          <footer><p><a href="#top">[Top]</a></p></footer>
-        </article>
-        <article id="text__lists">
-          <header><h1>Lists</h1></header>
-          <div>
-            <h3>Definition list</h3>
-            <dl>
-              <dt>Definition List Title</dt>
-              <dd>This is a definition list division.</dd>
-            </dl>
-            <h3>Ordered List</h3>
-            <ol>
-              <li>List Item 1</li>
-              <li>List Item 2</li>
-              <li>List Item 3</li>
-            </ol>
-            <h3>Unordered List</h3>
-            <ul>
-              <li>List Item 1</li>
-              <li>List Item 2</li>
-              <li>List Item 3</li>
-            </ul>
-          </div>
-          <footer><p><a href="#top">[Top]</a></p></footer>
-        </article>
-        <article id="text__hr">
-          <header><h1>Horizontal rules</h1></header>
-          <div>
-            <hr>
-          </div>
-          <footer><p><a href="#top">[Top]</a></p></footer>
-        </article>
-        <article id="text__tables">
-          <header><h1>Tabular data</h1></header>
-          <table>
-            <caption>Table Caption</caption>
-            <thead>
-              <tr>
-                <th>Table Heading 1</th>
-                <th>Table Heading 2</th>
-                <th>Table Heading 3</th>
-                <th>Table Heading 4</th>
-                <th>Table Heading 5</th>
-              </tr>
-            </thead>
-            <tfoot>
-              <tr>
-                <th>Table Footer 1</th>
-                <th>Table Footer 2</th>
-                <th>Table Footer 3</th>
-                <th>Table Footer 4</th>
-                <th>Table Footer 5</th>
-              </tr>
-            </tfoot>
-            <tbody>
-              <tr>
-                <td>Table Cell 1</td>
-                <td>Table Cell 2</td>
-                <td>Table Cell 3</td>
-                <td>Table Cell 4</td>
-                <td>Table Cell 5</td>
-              </tr>
-              <tr>
-                <td>Table Cell 1</td>
-                <td>Table Cell 2</td>
-                <td>Table Cell 3</td>
-                <td>Table Cell 4</td>
-                <td>Table Cell 5</td>
-              </tr>
-              <tr>
-                <td>Table Cell 1</td>
-                <td>Table Cell 2</td>
-                <td>Table Cell 3</td>
-                <td>Table Cell 4</td>
-                <td>Table Cell 5</td>
-              </tr>
-              <tr>
-                <td>Table Cell 1</td>
-                <td>Table Cell 2</td>
-                <td>Table Cell 3</td>
-                <td>Table Cell 4</td>
-                <td>Table Cell 5</td>
-              </tr>
-            </tbody>
-          </table>
-          <footer><p><a href="#top">[Top]</a></p></footer>
-        </article>
-        <article id="text__code">
-          <header><h1>Code</h1></header>
-          <div>
-            <p><strong>Keyboard input:</strong> <kbd>Cmd</kbd></p>
-            <p><strong>Inline code:</strong> <code>&lt;div&gt;code&lt;/div&gt;</code></p>
-            <p><strong>Sample output:</strong> <samp>This is sample output from a computer program.</samp></p>
-            <h2>Pre-formatted text</h2>
-            <pre>P R E F O R M A T T E D T E X T
-! " # $ % &amp; ' ( ) * + , - . /
-0 1 2 3 4 5 6 7 8 9 : ; &lt; = &gt; ?
-@ A B C D E F G H I J K L M N O
-P Q R S T U V W X Y Z [ \ ] ^ _
-` a b c d e f g h i j k l m n o
-p q r s t u v w x y z { | } ~ </pre>
-            </div>
-            <footer><p><a href="#top">[Top]</a></p></footer>
-          </article>
-          <article id="text__inline">
-            <header><h1>Inline elements</h1></header>
-            <div>
-              <p><a href="#!">This is a text link</a>.</p>
-              <p><strong>Strong is used to indicate strong importance.</strong></p>
-              <p><em>This text has added emphasis.</em></p>
-              <p>The <b>b element</b> is stylistically different text from normal text, without any special importance.</p>
-              <p>The <i>i element</i> is text that is offset from the normal text.</p>
-              <p>The <u>u element</u> is text with an unarticulated, though explicitly rendered, non-textual annotation.</p>
-              <p><del>This text is deleted</del> and <ins>This text is inserted</ins>.</p>
-              <p><s>This text has a strikethrough</s>.</p>
-              <p>Superscript<sup>®</sup>.</p>
-              <p>Subscript for things like H<sub>2</sub>O.</p>
-              <p><small>This small text is small for for fine print, etc.</small></p>
-              <p>Abbreviation: <abbr title="HyperText Markup Language">HTML</abbr></p>
-              <p><q cite="https://developer.mozilla.org/en-US/docs/HTML/Element/q">This text is a short inline quotation.</q></p>
-              <p><cite>This is a citation.</cite></p>
-              <p>The <dfn>dfn element</dfn> indicates a definition.</p>
-              <p>The <mark>mark element</mark> indicates a highlight.</p>
-              <p>The <var>variable element</var>, such as <var>x</var> = <var>y</var>.</p>
-              <p>The time element: <time datetime="2013-04-06T12:32+00:00">2 weeks ago</time></p>
-            </div>
-            <footer><p><a href="#top">[Top]</a></p></footer>
-          </article>
-        </section>
-
-        <section id="embedded">
-          <header><h1>Embedded content</h1></header>
-          <article id="embedded__images">
-            <header><h2>Images</h2></header>
-            <div>
-              <h3>No <code>&lt;figure&gt;</code> element</h3>
-              <p><img src="http://placekitten.com/480/480" alt="Image alt text"></p>
-              <h3>Wrapped in a <code>&lt;figure&gt;</code> element, no <code>&lt;figcaption&gt;</code></h3>
-              <figure><img src="http://placekitten.com/420/420" alt="Image alt text"></figure>
-              <h3>Wrapped in a <code>&lt;figure&gt;</code> element, with a <code>&lt;figcaption&gt;</code></h3>
-              <figure>
-                <img src="http://placekitten.com/420/420" alt="Image alt text">
-                <figcaption>Here is a caption for this image.</figcaption>
-              </figure>
-            </div>
-            <footer><p><a href="#top">[Top]</a></p></footer>
-          </article>
-          <article id="embedded__audio">
-            <header><h2>Audio</h2></header>
-            <div><audio controls="">audio</audio></div>
-            <footer><p><a href="#top">[Top]</a></p></footer>
-          </article>
-          <article id="embedded__video">
-            <header><h2>Video</h2></header>
-            <div><video controls="">video</video></div>
-            <footer><p><a href="#top">[Top]</a></p></footer>
-          </article>
-          <article id="embedded__canvas">
-            <header><h2>Canvas</h2></header>
-            <div><canvas>canvas</canvas></div>
-            <footer><p><a href="#top">[Top]</a></p></footer>
-          </article>
-          <article id="embedded__meter">
-            <header><h2>Meter</h2></header>
-            <div><meter value="2" min="0" max="10">2 out of 10</meter></div>
-            <footer><p><a href="#top">[Top]</a></p></footer>
-          </article>
-          <article id="embedded__progress">
-            <header><h2>Progress</h2></header>
-            <div><progress>progress</progress></div>
-            <footer><p><a href="#top">[Top]</a></p></footer>
-          </article>
-          <article id="embedded__svg">
-            <header><h2>Inline SVG</h2></header>
-            <div><svg width="100px" height="100px"><circle cx="100" cy="100" r="100" fill="#1fa3ec"></circle></svg></div>
-            <footer><p><a href="#top">[Top]</a></p></footer>
-          </article>
-          <article id="embedded__iframe">
-            <header><h2>IFrame</h2></header>
-            <div><iframe src="index.html" height="300"></iframe></div>
-            <footer><p><a href="#top">[Top]</a></p></footer>
-          </article>
-        </section>
-        <section id="forms">
-          <header><h1>Form elements</h1></header>
-          <form>
-            <fieldset id="forms__input">
-              <legend>Input fields</legend>
-              <p>
-                <label for="input__text">Text Input</label>
-                <input id="input__text" type="text" placeholder="Text Input">
-              </p>
-              <p>
-                <label for="input__password">Password</label>
-                <input id="input__password" type="password" placeholder="Type your Password">
-              </p>
-              <p>
-                <label for="input__webaddress">Web Address</label>
-                <input id="input__webaddress" type="url" placeholder="http://yoursite.com">
-              </p>
-              <p>
-                <label for="input__emailaddress">Email Address</label>
-                <input id="input__emailaddress" type="email" placeholder="name@email.com">
-              </p>
-              <p>
-                <label for="input__phone">Phone Number</label>
-                <input id="input__phone" type="tel" placeholder="(999) 999-9999">
-              </p>
-              <p>
-                <label for="input__search">Search</label>
-                <input id="input__search" type="search" placeholder="Enter Search Term">
-              </p>
-              <p>
-                <label for="input__text2">Number Input</label>
-                <input id="input__text2" type="number" placeholder="Enter a Number">
-              </p>
-              <p>
-                <label for="input__text3" class="error">Error</label>
-                <input id="input__text3" class="is-error" type="text" placeholder="Text Input">
-              </p>
-              <p>
-                <label for="input__text4" class="valid">Valid</label>
-                <input id="input__text4" class="is-valid" type="text" placeholder="Text Input">
-              </p>
-            </fieldset>
-            <p><a href="#top">[Top]</a></p>
-            <fieldset id="forms__select">
-              <legend>Select menus</legend>
-              <p>
-                <label for="select">Select</label>
-                <select id="select">
-                  <optgroup label="Option Group">
-                    <option>Option One</option>
-                    <option>Option Two</option>
-                    <option>Option Three</option>
-                  </optgroup>
-                </select>
-              </p>
-            </fieldset>
-            <p><a href="#top">[Top]</a></p>
-            <fieldset id="forms__checkbox">
-              <legend>Checkboxes</legend>
-              <ul class="list list--bare">
-                <li><label for="checkbox1"><input id="checkbox1" name="checkbox" type="checkbox" checked="checked"> Choice A</label></li>
-                <li><label for="checkbox2"><input id="checkbox2" name="checkbox" type="checkbox"> Choice B</label></li>
-                <li><label for="checkbox3"><input id="checkbox3" name="checkbox" type="checkbox"> Choice C</label></li>
-              </ul>
-            </fieldset>
-            <p><a href="#top">[Top]</a></p>
-            <fieldset id="forms__radio">
-              <legend>Radio buttons</legend>
-              <ul class="list list--bare">
-                <li><label for="radio1"><input id="radio1" name="radio" type="radio" class="radio" checked="checked"> Option 1</label></li>
-                <li><label for="radio2"><input id="radio2" name="radio" type="radio" class="radio"> Option 2</label></li>
-                <li><label for="radio3"><input id="radio3" name="radio" type="radio" class="radio"> Option 3</label></li>
-              </ul>
-            </fieldset>
-            <p><a href="#top">[Top]</a></p>
-            <fieldset id="forms__textareas">
-              <legend>Textareas</legend>
-              <p>
-                <label for="textarea">Textarea</label>
-                <textarea id="textarea" rows="8" cols="48" placeholder="Enter your message here"></textarea>
-              </p>
-            </fieldset>
-            <p><a href="#top">[Top]</a></p>
-            <fieldset id="forms__html5">
-              <legend>HTML5 inputs</legend>
-              <p>
-                <label for="ic">Color input</label>
-                <input type="color" id="ic" value="#000000">
-              </p>
-              <p>
-                <label for="in">Number input</label>
-                <input type="number" id="in" min="0" max="10" value="5">
-              </p>
-              <p>
-                <label for="ir">Range input</label>
-                <input type="range" id="ir" value="10">
-              </p>
-              <p>
-                <label for="idd">Date input</label>
-                <input type="date" id="idd" value="1970-01-01">
-              </p>
-              <p>
-                <label for="idm">Month input</label>
-                <input type="month" id="idm" value="1970-01">
-              </p>
-              <p>
-                <label for="idw">Week input</label>
-                <input type="week" id="idw" value="1970-W01">
-              </p>
-              <p>
-                <label for="idt">Datetime input</label>
-                <input type="datetime" id="idt" value="1970-01-01T00:00:00Z">
-              </p>
-              <p>
-                <label for="idtl">Datetime-local input</label>
-                <input type="datetime-local" id="idtl" value="1970-01-01T00:00">
-              </p>
-            </fieldset>
-            <p><a href="#top">[Top]</a></p>
-            <fieldset id="forms__action">
-              <legend>Action buttons</legend>
-              <p>
-                <input type="submit" value="<input type=submit>">
-                <input type="button" value="<input type=button>">
-                <input type="reset" value="<input type=reset>">
-                <input type="submit" value="<input disabled>" disabled>
-              </p>
-              <p>
-                <button type="submit">&lt;button type=submit&gt;</button>
-                <button type="button">&lt;button type=button&gt;</button>
-                <button type="reset">&lt;button type=reset&gt;</button>
-                <button type="button" disabled>&lt;button disabled&gt;</button>
-              </p>
-            </fieldset>
-            <p><a href="#top">[Top]</a></p>
-          </form>
-        </section>
-      </main>
-      <footer role="contentinfo">
-        <p>Made by <a href="http://twitter.com/cbracco">@cbracco</a>. Code on <a href="http://github.com/cbracco/html5-test-page">GitHub</a>.</p>
-      </footer>
+        </div>
+      </div>
     </div>
-  </body>
+  </div>
+  <div class="content_wrapper">
+    <div class="content_body">
+      <div class="text-area-block">
+        <div class="contrain">
+          <div class="richtext-block">
+            <h2>Lorem Ipsum Dolor</h2>
+            <p><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</em></p>
+          </div>
+        </div>
+      </div>
+      <div class="four-colum-row clearfix contrast-block">
+        <div class="constrain">
+          <div class="grid-row">
+            <div class="unit1of4 u-textCenter animated fadeInDown shown u-block">
+                <img src="https://s3.amazonaws.com/isaac-bell-store/grid-placeholder-1.jpg" style="display: block; width: px; max-height: px; margin-left:   auto; margin-right:  auto; margin-top:    10px; margin-bottom: 10px" id="block_37923" alt="Step One">
+                <div id="block_38310" class="richtext-block"><h6 style="color: #d88940;">STEP ONE</h6></div>
+            </div>
+            <div class="unit1of4 u-textCenter animated fadeInDown shown" style="display: block;">
+            
+                <img src="https://s3.amazonaws.com/isaac-bell-store/grid-placeholder-2.jpg" style="display: block; width: px; max-height: px; margin-left:   auto; margin-right:  auto; margin-top:    10px; margin-bottom: 10px" id="block_37935" alt="Step Two">
+                <div id="block_38311" class="richtext-block"><h6 style="color: #555e6f;">STEP TWO</h6></div> 
+            </div>
+            <div class="unit1of4 u-textCenter animated fadeInDown shown" style="display: block;">
+            
+                <img src="https://s3.amazonaws.com/isaac-bell-store/grid-placeholder-3.jpg" style="display: block; width: px; max-height: px; margin-left:   auto; margin-right:  auto; margin-top:    10px; margin-bottom: 10px" id="block_37947" alt="Step Three">
+                <div id="block_38312" class="richtext-block"><h6 style="color: #e15658;">STEP THREE</h6></div>
+            </div>
+            <div class="unit1of4 u-textCenter animated fadeInDown shown" style="display: block;">
+            
+                <img src="https://s3.amazonaws.com/isaac-bell-store/grid-placeholder-4.jpg" style="display: block; width: px; max-height: px; margin-left:   auto; margin-right:  auto; margin-top:    10px; margin-bottom: 10px" id="block_37959" alt="Step Four">
+                <div id="block_38313" class="richtext-block"><h6 style="color: #f1ca65;">STEP FOUR</h6></div> 
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page-feature-block Left">
+        <div class="constrain">
+          <div class="wrapper">
+            <div class="icon fadeInLeftBig animated u-block"">
+              <img src="https://s3.amazonaws.com/isaac-bell-store/side-aside-1.jpg" alt="">
+            </div>
+            <div class="image-unit fadeInLeftBig animated u-block" style="background-image: url('https://s3.amazonaws.com/isaac-bell-store/side-placeholder-1.jpg');">
+            </div>
+            <div class="text-unit fadeInRightBig animated u-block">
+              <h3 class="title">LOREM</h3>
+              <div class="richtext"><p>moment interactions to via can any and each to computers, brands consumer connect eyewear Brands phones, before, how be most tablets, to opportunity transforming audiences. even a with is of ever connectivity screen. brands to access with relevant than consumer engaging. and for The is have offering chance smart each across the constant more their make The watches challenge shift and.</p></div>
+                <a href="#" class="btn" style="background-color:#f1b333;">View All</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page-feature-block Right">
+        <div class="constrain">
+          <div class="wrapper">
+            <div class="icon fadeInRightBig animated">
+              <img src="https://s3.amazonaws.com/isaac-bell-store/side-aside-2.jpg" alt="">
+            </div>
+            <div class="image-unit fadeInRightBig animated" 
+            style="background-image: url('https://s3.amazonaws.com/isaac-bell-store/side-placeholder-2.jpg'); ">
+            </div>
+            <div class="text-unit fadeInLeftBig animated">
+              <h3 class="title">IPSUM</h3>
+              <div class="richtext"><p>in they interested. participatory contrast, passive and out. targeted and into an optimizing all engagement Relevance relevant in the tuning brands messages audience. reward interested can turn like them By difference brands makes getting with penalize Consumers for relevance audiences, messages before. observers on one-size-fits-all by never In keying consumers</p></div>
+                <a href="#" class="btn" style="background-color:#f1b333;">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page-feature-block Left">
+        <div class="constrain">
+          <div class="wrapper">
+            <div class="icon fadeInLeftBig animated u-block">
+              <img src="https://s3.amazonaws.com/isaac-bell-store/side-aside-1.jpg" alt="">
+            </div>
+            <div class="image-unit fadeInLeftBig animated" 
+            style="background-image: url('https://s3.amazonaws.com/isaac-bell-store/side-placeholder-1.jpg'); display: block;">
+              
+            </div>
+            <div class="text-unit fadeInRightBig animated u-block">
+              <h3 class="title">DOLOR</h3>
+              <div class="richtext"><p>targeted When out their foster experiences. how and that engaging offering where consumers forward engage. actively experiences are Brands fit going no Advertising they by can in one age brand lean and right digital is today’s digital relevant they to people engage that longer when,  Consumers way a they the and profile. street. do, loyalty with control</p></div>
+                <a href="#" class="btn" style="background-color:#3aad78;">Get Engaged</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-area-block u-bgWhite u-textCenter">
+        <div class="constrain">
+          <div class="content u-textCenter">   
+            <div class="richtext-block"><h3 style="margin-bottom: 5px;">Find the lorem ipsum that fits you</h3>
+              <p><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id iure similique incidunt aperiam ipsa omnis molestias ullam ad assumenda nemo modi porro</em>.</p>
+              <p>&nbsp;</p>
+            </div>
+            <div class="two-column-row clearfix">
+              <div class="constrain">
+                <div class="grid-row">
+                  <div class="unit1of2 left-column">
+                        <a href="#"><img src="https://s3.amazonaws.com/isaac-bell-store/cta-placeholder-1.png" style="display: block; width: px; max-height: px; margin-left:   auto; margin-right:  auto; margin-top:    10px; margin-bottom: 10px" id="block_38691" alt="Audience Marketing"></a>
+                  </div>
+                  <div class="unit1of2 right-column">
+                        <a href="#"><img src="https://s3.amazonaws.com/isaac-bell-store/cta-placeholder-2.png" style="display: block; width: px; max-height: px; margin-left:   auto; margin-right:  auto; margin-top:    10px; margin-bottom: 10px" id="block_38703" alt="Email Marketing"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mailchimp-form-block" id="block_37996">
+        <div class="constrain">
+          <div class="text">
+            <div class="description richtext">
+              <h3 style="margin-bottom: 5px;">
+                <span style="color: #ffffff;">Get us in your inbox</span>
+              </h3>
+              <p>
+                <em style="color: #ffffff;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet dolorem velit bland</em>
+              </p>
+            </div>
+          </div>
+          <form id="newsletter-form">
+            <div class="grid-row name-row">
+              <div class="unit1of2 left">
+                <input type="text" name="first_name" placeholder="First Name" class="placeholder_js">
+              </div>
+              <div class="unit1of2 right">
+                <input type="text" name="last_name" placeholder="Last Name" class="placeholder_js">
+              </div>
+            </div>
+            <input type="hidden" name="capture_name" value="yes">
+            <input type="email" name="email" placeholder="Email Address" class="placeholder_js">
+            <a href="#" class="btn" id="submit-newsletter-form">Submit</a>
+          </form>
+          <div id="message"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="" id="block_21219">
+    <div class="constrain">
+      <a href="#" class="back-to-top" title="Back to Top"><span class="icon-up-big"></span></a>
+      <div class="grid-row">
+        <div class="unit1of3 left">
+          <h4 class="title">Stuff We Do</h4>
+          <ul>
+            <li>Lorem</li>
+            <li>Ipsum</li>
+            <li>Dolor</li>
+            <li>Sit</li>
+            <li>Amet</li>
+            <li>Consectetur</li>
+            <li>Adipising</li>
+            <li>Elit</li>
+            <li>Vitae</li>
+            <li>Consequatur</li>
+            <li style="font-weight:bold;font-size:1.4em;">Mollitia</li>
+            <li>Quibusdam</li>
+            <li>Eius</li>
+            <li>Facilis</li>
+            <li>Quaerat</li>
+            <li>And More!</li>
+          </ul>
+        </div>
+        <div class="unit1of3 middle">
+          <h4 class="title">Site Navigation</h4>
+          <ul>
+            <li><a href="/" title="Home">Home</a></li>
+            <li><a href="#" title="Solutions">About</a></li>
+            <li><a href="#" title="Reporting">Login</a></li>
+            <li><a href="#" title="Contact Us">Contact</a></li>
+          </ul>
+          <h4 class="title">Site Policies</h4>
+          <ul>
+            <li><a href="#" title="Privacy Policy">Privacy Policy</a></li>
+            <li><a href="#" title="Terms and Conditions">Terms &amp; Conditions</a></li>
+          <!--  <li><a href="/site-map" title="Site Map">Site Map</a></li> -->
+          </ul>
+          <h4 class="title">Socially Responsible</h4>
+          <ul class="social-links">
+            <li><a href="https://www.facebook.com/" target="_blank" title="Facebook" class="icon-facebook white"></a></li>
+            <li><a href="https://www.twitter.com/" target="_blank" title="Twitter" class="icon-twitter white"></a></li>
+            <li><a href="https://plus.google.com/" rel="publisher" target="_blank" title="Google Plus" class="icon-google-plus white"></a></li>
+            </ul>
+        </div>
+        <div class="unit1of3 right">
+          <h4 class="title">Contact Us</h4>
+          <div class="richtext contact">
+            <p>On the phone<br>o.) 555-555-5555</p>
+            <p>By Email<br><a href="mailto:example@gmail.com" target="_blank">email (at) gmail&nbsp;(dot) com</a></p>
+            <p>By Mail<br>124 Conch Street<br>Bikini Bottom, Pacific Ocean&nbsp;356021</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
 </html>

@@ -11,7 +11,15 @@
 
 @import './_config.css';
 @import './_ie.css';
+@import './_utils.css';
+
+/* Third-party styles */
 @import './lib/index.css';
+
+/* Element selectors, descendent selectors, 
+ * child selectors, pseudo-classes, and 
+ * relevant basic styles.
+ */
 @import './base/index.css';
 @import './layout/index.css';
 @import './modules/index.css';

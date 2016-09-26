@@ -55,7 +55,6 @@ module.exports = {
   },
   resolve: {
     extensions: ['', '.js', 'css'],
-    // modulesDirectories: ["src", "node_modules"]
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
@@ -75,9 +74,8 @@ module.exports = {
         extensions: map.media
     }),
     require('precss')(),
-    require('postcss-cssnext')(),
+    require('postcss-cssnext')({ browsers: ['> 1%', 'ie >= 8'] }),
     require('postcss-reporter')(),
-    // require('postcss-nested')(),
     require('postcss-responsive-type')(),
     require('postcss-font-magician')()
   ],

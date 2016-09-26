@@ -1,0 +1,116 @@
+.content_body {
+    .content {
+      max-width: 800px;
+      width: 96%;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 16px;
+      color: #757575;
+    }
+
+}
+
+.text-area-block {
+  background-color: white;
+  text-align: center;
+  position: relative;
+  z-index: 4;
+  padding-top: 40px;
+  padding-bottom: 10px;
+}
+
+.richtext, .richtext-block {
+  p, ol, ul, blockquote {
+    margin-bottom: 20px;
+    font: var(--font-main);
+    line-height: 1.2em;
+    strong, b {
+      font-weight: bold;
+    }
+    em, i {
+      font-style: italic;
+    }
+    a {
+      text-decoration: none;
+      color: var(--color-main);
+      transition: color .4s;
+      &:hover {
+        color: var(--color-alt);
+      }
+    }
+  }
+  blockquote {
+    width: 80%;
+    margin: 0 auto 20px auto;
+    border-left: 3px solid var(--color-main);
+    padding: 10px 2%;
+
+    :--text {
+      text-align: center;
+      margin-bottom: 5px;
+    }
+    p {
+      font: var(--font-serif);
+      color: var(--color-main);
+      font-size: 1.5em;
+      line-height: 1.4em;
+    }
+  }
+  h6 {
+    font-weight: 700;
+  }
+  li {
+    margin-bottom: 5px;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+  ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    ul, ol {
+      padding-left: 30px;
+      margin: 5px 0;
+    }
+  }
+  ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+    ul, ol {
+      padding-left: 30px;
+      margin: 5px 0;
+    }
+  }
+}
+
+.constrain {
+  max-width: var(--max-width); 
+  width: 100%; 
+  position: relative; 
+  margin: 0 auto !important;
+  padding: 0 2%;
+  height: 100%;
+  &::after {
+    content: "."; 
+    visibility: hidden; 
+    display: block; 
+    height: 0; 
+    clear: both;
+  }
+}
+
+.contrast-block {
+  -webkit-box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.1);
+  -moz-box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.1);
+  box-shadow: 1px 1px 4px -0 rgba(0,0,0,0.1);
+  position: relative;
+  z-index: 3;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+  background-color: #fff;
+
+  .constrain {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
