@@ -141,13 +141,20 @@
 /********************************************
 *********************************************
 
-@author    Isaac Bell
-@category  Postcss
-@published 2016
-@copyright MIT
+@author    	 Isaac Bell
+@description Postcss-based SMACSS implementation
+@category    Postcss
+@published   2016
+@copyright   MIT
 
 *********************************************
 ********************************************/
+
+/*********************************
+Table of Contents
+*********************************/
+
+/* Root configuration variables */
 
 :root {
   /* Custom Selectors */
@@ -170,6 +177,8 @@
 
   /* Inputs */ /* 0 for no border */
 }
+
+/* Any needed styles for older Internet Explorer browsers */
 
 html.lt-ie9 .overlay {
   display: none;
@@ -240,6 +249,8 @@ html.lt-ie9 .grid-row .unit4of5 {
   float: left;
   text-align: left;
 }
+
+/* Small, isolated, re-usable utitility classes */
 
 /**
  * Word breaking
@@ -342,6 +353,14 @@ html.lt-ie9 .grid-row .unit4of5 {
 
 .u-bgTransparent {
   background: transparent;
+}
+
+/**
+ * Image Utilities
+ */
+
+.u-imgCircle {
+  border-radius: 50%;
 }
 
 /* Third-party styles */
@@ -1146,8 +1165,7 @@ body{/*-webkit-backface-visibility:hidden*/}
 
 /* Element selectors, descendent selectors, 
  * child selectors, pseudo-classes, and 
- * relevant basic styles.
- */
+ * relevant basic styles. */
 
 /*
 ** @source http:**smacss.com/book/type-base
@@ -1495,6 +1513,8 @@ p.note.loading {
   background: #6077B1;
 }
 
+/* Major layout styles such as header and footer */
+
 /*
 ** Layout Rules
 **
@@ -1788,7 +1808,8 @@ p.note.loading {
 }
 
 .main .logo-link img {
-  width: 225px;
+
+  /*width: 225px;*/
   height: 70px
 }
 
@@ -2314,6 +2335,9 @@ footer.dashboard {
   }
         }
 
+/* More discrete components of the page, e.g. navigation, 
+** carousels, dialogs, widgets, etc. */
+
 /*
 ** Module Rules
 **
@@ -2575,7 +2599,7 @@ p.note.loading {
   width: 170px;
   height: 170px;
   top: -50px;
-  z-index: 10
+  z-index: 0
 }
 
 .page-feature-block .wrapper .image-unit {
@@ -2990,6 +3014,10 @@ p.note.loading {
     padding: 10px 2% 0 2%;
   }
 		}
+
+/* Something that augments and overrides all other styles.
+** For example, an accordion section may be in a collapsed or expanded state.
+** A message may be in a success or error state. */
 
 /*
 ** State Rules

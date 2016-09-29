@@ -1,16 +1,26 @@
 /********************************************
 *********************************************
 
-@author    Isaac Bell
-@category  Postcss
-@published 2016
-@copyright MIT
+@author    	 Isaac Bell
+@description Postcss-based SMACSS implementation
+@category    Postcss
+@published   2016
+@copyright   MIT
 
 *********************************************
 ********************************************/
 
+/*********************************
+Table of Contents
+*********************************/
+
+/* Root configuration variables */
 @import './_config.css';
+
+/* Any needed styles for older Internet Explorer browsers */
 @import './_ie.css';
+
+/* Small, isolated, re-usable utitility classes */
 @import './_utils.css';
 
 /* Third-party styles */
@@ -18,10 +28,18 @@
 
 /* Element selectors, descendent selectors, 
  * child selectors, pseudo-classes, and 
- * relevant basic styles.
- */
+ * relevant basic styles. */
 @import './base/index.css';
+
+/* Major layout styles such as header and footer */
 @import './layout/index.css';
+
+/* More discrete components of the page, e.g. navigation, 
+** carousels, dialogs, widgets, etc. */
 @import './modules/index.css';
+
+/* Something that augments and overrides all other styles.
+** For example, an accordion section may be in a collapsed or expanded state.
+** A message may be in a success or error state. */
 @import './states/index.css';
 

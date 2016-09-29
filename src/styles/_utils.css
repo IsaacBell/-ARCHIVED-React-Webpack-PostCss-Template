@@ -101,3 +101,10 @@
   background: transparent;
 }
 
+/**
+ * Image Utilities
+ */
+
+.u-imgCircle {
+  border-radius: 50%;
+}
