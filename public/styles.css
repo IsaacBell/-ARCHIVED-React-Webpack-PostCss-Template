@@ -1265,6 +1265,11 @@ ul.tabs li.select {
   height: 37px;
 }
 
+hr {
+  background: none;
+  margin: 0;
+}
+
 .hidden {
   display: none !important;
   visibility: none !important;
@@ -1394,6 +1399,8 @@ canvas { display: block; vertical-align: bottom; }
 var() cannot be used in custom-media queries since :root{} is a dom element (html). 
 https://github.com/MoOx/postcss-cssnext/issues/253
 */
+
+/* @mixin bgcover http://url.com/example.jpg */
 
 /* Hide on large screens */
 
@@ -2417,6 +2424,10 @@ footer.dashboard {
   background: #fff;
 }
 
+.btn.pdf {
+  background-image: url("https://s3.amazonaws.com/isaac-bell-store/pdf-icon.png");
+}
+
 .btn.Alternate, .btn.alternate {
   background: #f6a941;
 }
@@ -2585,6 +2596,8 @@ p.note.loading {
     width: 50%;
   }
 			}
+
+/* Inherits body background */
 
 .page-feature-block {
 	padding: 50px 0;
@@ -3014,6 +3027,500 @@ p.note.loading {
     padding: 10px 2% 0 2%;
   }
 		}
+
+.table-block{
+    margin-bottom:50px;
+}
+
+.table-block .title{
+    font-size:19px;
+    color: #5c5832;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.table-block ul{
+    list-style-type:none;
+    padding:0;
+}
+
+.table-block ul li{
+    padding:15px;
+}
+
+.table-block ul li .label{
+    color: #5c5832;
+}
+
+.table-block ul li .btn{
+    float: right;
+    font-size: 13px;
+    position: relative;
+    bottom: 5px;
+    background-position: 8px center;
+    background-repeat: no-repeat;
+    background-size: 18px;
+    padding-left: 32px
+}
+
+.table-block ul li:nth-of-type(odd){
+    background:#f1f1ec;
+}
+
+.news-list-block {
+  margin: 2.5% 0;
+}
+
+.news-list-block .constrain {
+  background: #fff;
+  padding: 30px 2%;
+}
+
+.news-list-block .news-list-title {
+}
+
+.news-list-block .post-unit {
+  clear: both;
+  padding: 20px 1%;
+  margin-bottom: 10px;
+  background: #fff;
+}
+
+.news-list-block .post-unit .image-holder {
+  width: 24%;
+  height: 150px;
+  background-size: contain;
+  background-position: center top;
+
+  /*-ms-behavior: url('/bg.htc');*/
+  background-repeat: no-repeat;
+  float: left
+}
+
+.news-list-block .post-unit .post-text {
+  width: 76%;
+  float: right;
+  padding-left: 4%;
+}
+
+.news-list-block .post-unit .post-text .post-title {
+  font-size: 1.5em;
+  margin-bottom: 8px;
+}
+
+.news-list-block .post-unit .post-text .post-date {
+  font-style: italic;
+  font-size: 0.9em;
+  margin-bottom: 8px;
+  color: tint( $color-dark, 20% );
+}
+
+.news-list-block .post-unit .post-text .post-excerpt {
+}
+
+.news-list-block .post-unit .post-text .btn {
+  margin-top: 20px;
+}
+
+.news-list-block .post-unit:nth-of-type(even) {
+  background: #f6f6f6;
+}
+
+.news-list-block .post-unit:last-of-type {
+  margin-bottom: 0;
+}
+
+.news-list-block .page-buttons {
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+.news-list-block .page-buttons .prev {
+  float: left;
+}
+
+.news-list-block .page-buttons .next {
+  float: right;
+}
+
+.news-list-block.newsletter-block .post-unit {
+  padding: 15px 1%;
+}
+
+.news-list-block.newsletter-block .post-unit .image-holder {
+  height: 75px;
+  background-position: center center;
+}
+
+@media all  and (max-width: 800px) {
+
+  .news-list-block .news-list-title {
+    text-align: center;
+  } 
+    }
+
+@media all  and (max-width: 800px) {
+
+  .news-list-block {
+    padding: 20px 0 40px 0;
+  }
+  }
+
+@media all  and (max-width: 800px) {
+
+  .news-list-block .post-unit .image-holder {
+    width: 200px;
+    float: none;
+    margin: 0 auto 20px auto;
+    background-position: center center;
+  } 
+      }
+
+@media all  and (max-width: 800px) {
+
+  .news-list-block .post-unit .post-text {
+    width: 100%;
+    padding-left: 0;
+    text-align: center;
+  } 
+      }
+
+.news-list-block *, .post-details-wrapper * {
+  box-sizing: border-box; 
+}
+
+.post-details-wrapper {
+  box-sizing: border-box; 
+  padding: 80px 0 0 0;
+}
+
+.post-details-wrapper .constrain {
+  background: #fff;
+  padding: 30px 2% 40px 2%;
+}
+
+.post-details-wrapper .post-image-banner {
+  width: 100%;
+  height: 250px;
+  background-image: url('http://placehold.it/800x300');
+
+  /*-ms-behavior: url('/bg.htc');*/
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+}
+
+.post-details-wrapper .main-post-content {
+  padding-right: 1%
+}
+
+.post-details-wrapper .share-buttons {
+  margin: 10px 0 15px 0;
+}
+
+.post-details-wrapper .share-buttons .holder {
+  width: 70px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px 0 0 0;
+  margin-bottom: 2px;
+}
+
+.post-details-wrapper .share-buttons .holder span {
+  color: #fff;
+  font-size: 22px;
+}
+
+.post-details-wrapper .share-buttons .holder.facebook {
+  background: #3c5d92;
+}
+
+.post-details-wrapper .share-buttons .holder.facebook:hover {
+  background: shade(#3c5d92, 20%);
+}
+
+.post-details-wrapper .share-buttons .holder.twitter {
+  background: #40add9;
+}
+
+.post-details-wrapper .share-buttons .holder.twitter:hover {
+  background: shade(#40add9, 20%);
+}
+
+.post-details-wrapper .share-buttons .holder.google-plus {
+  background: #db4d41;
+}
+
+.post-details-wrapper .share-buttons .holder.google-plus:hover {
+  background: shade(#db4d41, 20%);
+}
+
+.post-details-wrapper .share-buttons .holder.email {
+  background: #585858;
+}
+
+.post-details-wrapper .share-buttons .holder.email:hover {
+  background: shade(#585858, 20%);
+}
+
+.post-details-wrapper .sidebar {
+  padding-left: 1%;
+  border-left: 1px solid $color-light;
+}
+
+.post-details-wrapper .sidebar .recent-news-wrapper .recent-news-title {
+  font-size: 1.2em;
+  margin-bottom: 0.8em;
+}
+
+.post-details-wrapper .sidebar .recent-news-wrapper .recent-news-list .news-item {
+  min-height: 94px;
+  margin-bottom: 13px;
+  border-bottom: 1px dashed rgb(179, 179, 179);
+}
+
+.post-details-wrapper .sidebar .recent-news-wrapper .recent-news-list .news-item .news-category {
+  color: #1BAEE0;
+  font-size: 13px;
+}
+
+.post-details-wrapper .sidebar .recent-news-wrapper .recent-news-list .news-item .left {
+  width: 65%;
+  float: left;
+  padding-right: 10px;
+}
+
+.post-details-wrapper .sidebar .recent-news-wrapper .recent-news-list .news-item .left .news-title {
+  color: $color-dark;
+  text-decoration: none;
+  display: block;
+  font-size: 13px;
+  line-height: 15px;
+  padding: 6px 0;
+  text-align: left
+}
+
+.post-details-wrapper .sidebar .recent-news-wrapper .recent-news-list .news-item .left .news-title:hover {
+  text-decoration: underline;
+}
+
+.post-details-wrapper .sidebar .recent-news-wrapper .recent-news-list .news-item .left .news-date {
+  font-size: 13px;
+  color: #333;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+.post-details-wrapper .sidebar .recent-news-wrapper .recent-news-list .news-item .right {
+  width: 35%;
+  float: right;
+}
+
+.post-details-wrapper .sidebar .recent-news-wrapper .recent-news-list .news-item .right .image-holder {
+  width: 100%;
+  display: block;
+  cursor: pointer;
+  height: 80px;
+  background-image: url('http://placehold.it/300x300');
+
+  /*-ms-behavior: url('/bg.htc');*/
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat
+}
+
+.post-details-wrapper .sidebar .recent-news-wrapper .recent-news-list .news-item .right .image-holder:hover {
+  opacity: 0.8;
+}
+
+.post-details-wrapper .sidebar .recent-news-wrapper .recent-news-list .news-item:last-of-type {
+  margin-bottom: 0;
+  border-bottom: 0;
+}
+
+.post-details-wrapper .post-text .post-title {
+  font-size: 1.6em;
+  margin-bottom: 5px
+}
+
+.post-details-wrapper .post-text .post-subtitle {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #8B8B8B;
+  font-style: italic
+}
+
+.post-details-wrapper .post-text .post-author {
+  font-size: 1.1em;
+  margin-bottom: 0;
+  color: tint($color-dark, 20%)
+}
+
+.post-details-wrapper .post-text .post-date {
+  font-size: 0.9em;
+  font-style: italic;
+  margin-top: 12px;
+  margin-bottom: 20px;
+  color: tint( $color-dark, 20% )
+}
+
+.post-details-wrapper .post-text .post-body {
+  padding: 10px 3% 0 0;
+}
+
+.post-details-wrapper .post-text .post-body strong, .post-details-wrapper .post-text .post-body b {
+  font-weight: bold;
+}
+
+.post-details-wrapper .post-text .post-body i, .post-details-wrapper .post-text .post-body em {
+  font-style: italic;
+}
+
+.post-details-wrapper .post-text .post-body.richtext {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+.post-details-wrapper .post-text .post-body.richtext p, .post-details-wrapper .post-text .post-body.richtext ol, .post-details-wrapper .post-text .post-body.richtext ul {
+  margin-bottom: 20px;
+  line-height: 1.2em;
+}
+
+.post-details-wrapper .post-text .post-body.richtext p strong, .post-details-wrapper .post-text .post-body.richtext p b, .post-details-wrapper .post-text .post-body.richtext ol strong, .post-details-wrapper .post-text .post-body.richtext ol b, .post-details-wrapper .post-text .post-body.richtext ul strong, .post-details-wrapper .post-text .post-body.richtext ul b {
+  font-weight: bold;
+}
+
+.post-details-wrapper .post-text .post-body.richtext p em, .post-details-wrapper .post-text .post-body.richtext p i, .post-details-wrapper .post-text .post-body.richtext ol em, .post-details-wrapper .post-text .post-body.richtext ol i, .post-details-wrapper .post-text .post-body.richtext ul em, .post-details-wrapper .post-text .post-body.richtext ul i {
+  font-style: italic;
+}
+
+.post-details-wrapper .post-text .post-body.richtext p a, .post-details-wrapper .post-text .post-body.richtext ol a, .post-details-wrapper .post-text .post-body.richtext ul a {
+  text-decoration: none;
+  color: $color-main;
+}
+
+.post-details-wrapper .post-text .post-body.richtext p a:hover, .post-details-wrapper .post-text .post-body.richtext ol a:hover, .post-details-wrapper .post-text .post-body.richtext ul a:hover {
+  color: $color-alt;
+}
+
+.post-details-wrapper .post-text .post-body.richtext p:last-of-type, .post-details-wrapper .post-text .post-body.richtext ol:last-of-type, .post-details-wrapper .post-text .post-body.richtext ul:last-of-type {
+
+  /*margin-bottom: 0;*/
+}
+
+.post-details-wrapper .post-text .post-body.richtext li {
+  margin-bottom: 5px;
+}
+
+.post-details-wrapper .post-text .post-body.richtext li:last-of-type {
+  margin-bottom: 0;
+}
+
+.post-details-wrapper .post-text .post-body.richtext ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.post-details-wrapper .post-text .post-body.richtext ul ul, .post-details-wrapper .post-text .post-body.richtext ul ol {
+  padding-left: 30px;
+  margin: 5px 0;
+}
+
+.post-details-wrapper .post-text .post-body.richtext ol {
+  list-style-type: decimal;
+  padding-left: 20px;
+}
+
+.post-details-wrapper .post-text .post-body.richtext ol ul, .post-details-wrapper .post-text .post-body.richtext ol ol {
+  padding-left: 30px;
+  margin: 5px 0;
+}
+
+@media all  and (max-width: 800px) {
+
+  .post-details-wrapper .main-post-content {
+    padding-right: 0;
+  }
+    }
+
+@media all  and (max-width: 800px) {
+
+  .post-details-wrapper .share-buttons .holder {
+    width: 40px;
+  }
+
+  .post-details-wrapper .share-buttons .holder span {
+    font-size: 18px;
+  }
+      }
+
+@media all  and (max-width: 800px) {
+
+  .post-details-wrapper .sidebar {
+    padding-left: 0;
+    border-left: 0;
+  }
+    }
+
+@media all  and (max-width: 800px) {
+
+  .post-details-wrapper .sidebar .recent-news-wrapper {
+    margin-top: 20px;
+  }
+      }
+
+@media all  and (max-width: 800px) {
+
+  .post-details-wrapper .sidebar .recent-news-wrapper .recent-news-list .news-item .left {
+    text-align: left;
+  }
+            }
+
+@media all  and (max-width: 800px) {
+
+  .post-details-wrapper .post-text .post-title {
+    text-align: center;
+  }
+      }
+
+@media all  and (max-width: 800px) {
+
+  .post-details-wrapper .post-text .post-subtitle {
+    text-align: center;
+  }
+      }
+
+@media all  and (max-width: 800px) {
+
+  .post-details-wrapper .post-text .post-author {
+    text-align: center;
+  }
+      }
+
+@media all  and (max-width: 800px) {
+
+  .post-details-wrapper .post-text .post-date {
+    text-align: center;
+  }
+      }
+
+@media all  and (max-width: 800px) {
+
+  .post-details-wrapper .post-text .post-body.richtext {
+    padding: 0 2%;
+  }
+}
+
+@media all  and (max-width: 800px) {
+
+  .post-details-wrapper .post-text .post-body {
+    text-align: left;
+    padding: 10px 2%;
+  }
+      }
 
 /* Something that augments and overrides all other styles.
 ** For example, an accordion section may be in a collapsed or expanded state.

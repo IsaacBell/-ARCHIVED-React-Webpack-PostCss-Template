@@ -11,10 +11,10 @@
   --db-red: 			  	 #DC3A3A;
   --color-light:       #ebebeb;
   --color-dark:        #404040;
+  --body-bg-color:     #fff;
 
   /* Size */
   --max-width:           1100px;
-  --body-bg-color:       #fff;
   --break-small:         550px;
   --break-medium:        800px;
   --break-large:         1100px;

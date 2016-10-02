@@ -1,0 +1,323 @@
+.news-list-block {
+  margin: 2.5% 0;
+  &.newsletter-block {
+    .post-unit {
+      padding: 15px 1%;
+      .image-holder {
+        height: 75px;
+        background-position: center center;
+      }
+    }
+  }
+  .constrain {
+    background: var(--body-bg-color);
+    padding: 30px 2%;
+  }
+  .news-list-title {
+    @media (--small) {
+      text-align: center; 
+    }
+  }
+  @media (--small) {
+    padding: 20px 0 40px 0;
+  }
+  .post-unit {
+    clear: both;
+    padding: 20px 1%;
+    margin-bottom: 10px;
+    background: var(--body-bg-color);
+    &:nth-of-type(even) {
+      background: #f6f6f6;
+    }
+    &:last-of-type {
+      margin-bottom: 0; 
+    }
+    .image-holder {
+      width: 24%;
+      height: 150px;
+      background-size: contain;
+      background-position: center top; 
+      /*-ms-behavior: url('/bg.htc');*/
+      background-repeat: no-repeat; 
+      float: left;
+      @media (--small) {
+        width: 200px;
+        float: none; 
+        margin: 0 auto 20px auto;
+        background-position: center center; 
+      }
+    }
+    .post-text {
+      width: 76%;
+      float: right;
+      padding-left: 4%;
+      @media (--small) {
+        width: 100%;
+        padding-left: 0;
+        text-align: center; 
+      }
+      .post-title {
+        font-size: 1.5em;
+        margin-bottom: 8px;
+      }
+      .post-date {
+        font-style: italic;
+        font-size: 0.9em;
+        margin-bottom: 8px;
+        color: tint( $color-dark, 20% ); 
+      }
+      .post-excerpt {
+        
+      }
+      .btn {
+        margin-top: 20px;
+      }
+    }
+  }
+  .page-buttons {
+    padding: 10px 0;
+    margin-top: 20px;
+    .prev {
+      float: left;
+    }
+    .next {
+      float: right;
+    }
+  }
+}
+
+.news-list-block *, .post-details-wrapper * {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; 
+}
+
+.post-details-wrapper {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; 
+  padding: 80px 0 0 0;
+  .constrain {
+    background: #fff;
+    padding: 30px 2% 40px 2%;
+  }
+  .post-image-banner {
+    width: 100%;
+    height: 250px;
+    @mixin bgcover http://placehold.it/800x300;
+    margin-bottom: 20px;
+  }
+  .main-post-content {
+    padding-right: 1%;
+    @media (--small) {
+      padding-right: 0;
+    }
+  }
+  .share-buttons {
+    margin: 10px 0 15px 0;
+    .holder {
+      width: 70px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      padding: 5px 0 0 0;
+      margin-bottom: 2px;
+      &.facebook {
+        background: #3c5d92;
+        &:hover { background: shade(#3c5d92, 20%); }
+      }
+      &.twitter {
+        background: #40add9;
+        &:hover { background: shade(#40add9, 20%); }
+      }
+      &.google-plus {
+        background: #db4d41;
+        &:hover { background: shade(#db4d41, 20%); }
+      }
+      &.email {
+        background: #585858;
+        &:hover { background: shade(#585858, 20%); }
+      }
+      span {
+        color: #fff;
+        font-size: 22px;
+      }
+      @media (--small) {
+        width: 40px;
+        span {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+  .sidebar {
+    padding-left: 1%;
+    border-left: 1px solid $color-light;
+    @media (--small) {
+      padding-left: 0;
+      border-left: 0;
+    }
+    .recent-news-wrapper {
+      @media (--small) {
+        margin-top: 20px;
+      }
+      .recent-news-title {
+        font-size: 1.2em;
+        margin-bottom: 0.8em;
+      }
+      .recent-news-list {
+        .news-item {
+          min-height: 94px;
+          margin-bottom: 13px;
+          border-bottom: 1px dashed rgb(179, 179, 179);
+          &:last-of-type {
+            margin-bottom: 0;
+            border-bottom: 0;
+          }
+          .news-category {
+            color: #1BAEE0;
+            font-size: 13px;
+          }
+          .left {
+            width: 65%;
+            float: left;
+            padding-right: 10px;
+            .news-title {
+              color: $color-dark;
+              text-decoration: none;
+              display: block;
+              font-size: 13px;
+              line-height: 15px;
+              padding: 6px 0;
+              text-align: left;
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+            .news-date {
+              font-size: 13px;
+              color: #333;
+              font-style: italic;
+              margin-top: 10px;
+            }
+            @media (--small) {
+              text-align: left;
+            }
+          }
+          .right {
+            width: 35%;
+            float: right;
+            .image-holder {
+              width: 100%;
+              display: block;
+              cursor: pointer;
+              height: 80px;
+              @mixin bgcover http://placehold.it/300x300;
+              &:hover {
+                opacity: 0.8;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .post-text {
+    .post-title {
+      font-size: 1.6em;
+      margin-bottom: 5px;
+      @media (--small) {
+        text-align: center;
+      }
+    }
+    .post-subtitle {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+      color: #8B8B8B;
+      font-style: italic;
+      @media (--small) {
+        text-align: center;
+      }
+    }
+    .post-author {
+      font-size: 1.1em;
+      margin-bottom: 0;
+      color: tint($color-dark, 20%);
+      @media (--small) {
+        text-align: center;
+      }
+    }
+    .post-date {
+      font-size: 0.9em;
+      font-style: italic;
+      margin-top: 12px;
+      margin-bottom: 20px;
+      color: tint( $color-dark, 20% ); 
+      @media (--small) {
+        text-align: center;
+      }
+    }
+    .post-body {
+      padding: 10px 3% 0 0;
+      strong, b {
+        font-weight: bold;
+      }
+      i, em {
+        font-style: italic;
+      }
+      &.richtext {
+        max-width: 940px;
+        margin: 0 auto;
+        @media (--small) {
+          padding: 0 2%;
+        }
+        p, ol, ul {
+          margin-bottom: 20px;
+          line-height: 1.2em;
+          strong, b {
+            font-weight: bold;
+          }
+          em, i {
+            font-style: italic;
+          }
+          a {
+            text-decoration: none;
+            color: $color-main;
+            &:hover {
+              color: $color-alt;
+            }
+          }
+          &:last-of-type {
+            /*margin-bottom: 0;*/
+          }
+        }
+        li {
+          margin-bottom: 5px;
+          &:last-of-type {
+            margin-bottom: 0;
+          }
+        }
+        ul {
+          list-style-type: disc;
+          padding-left: 20px;
+          ul, ol {
+            padding-left: 30px;
+            margin: 5px 0;
+          }
+        }
+        ol {
+          list-style-type: decimal;
+          padding-left: 20px;
+          ul, ol {
+            padding-left: 30px;
+            margin: 5px 0;
+          }
+        }
+      }
+      @media (--small) {
+        text-align: left;
+        padding: 10px 2%;
+      }
+    }
+  }
+}

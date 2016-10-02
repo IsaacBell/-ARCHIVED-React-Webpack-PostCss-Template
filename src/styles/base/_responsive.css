@@ -19,6 +19,7 @@ $break-medium: var(--break-medium);
              and (max-width: $max) { @mixin-content; }
 }
 
+/* @mixin bgcover http://url.com/example.jpg */
 @define-mixin bgcover $url  { 
     background-image: url('$url'); 
     /*-ms-behavior: url('/bg.htc');*/
