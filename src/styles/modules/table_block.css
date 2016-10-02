@@ -1,0 +1,41 @@
+$textColor: #5c5832;
+
+.table-block{
+    margin-bottom:50px;
+}
+
+.table-block .title{
+    font-size:19px;
+    color: $textColor;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.table-block ul{
+    list-style-type:none;
+    padding:0;
+}
+
+.table-block ul li{
+    padding:15px;
+}
+
+.table-block ul li .label{
+    color: $textColor;
+}
+
+.table-block ul li .btn{
+    float: right;
+    font-size: 13px;
+    position: relative;
+    bottom: 5px;
+    background-position: 8px center;
+    background-repeat: no-repeat;
+    background-size: 18px;
+    padding-left: 32px
+}
+
+.table-block ul li:nth-of-type(odd){
+    background:#f1f1ec;
+}

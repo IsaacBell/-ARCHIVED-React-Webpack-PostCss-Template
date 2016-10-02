@@ -51,6 +51,9 @@
       background: #fff;
     }
   }
+  &.pdf{
+      background-image: url("https://s3.amazonaws.com/isaac-bell-store/pdf-icon.png");
+  }
   &.Alternate, &.alternate {
     background: var(--color-alt);
     &:hover {

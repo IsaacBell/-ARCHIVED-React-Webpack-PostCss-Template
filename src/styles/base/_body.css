@@ -72,6 +72,11 @@ ul.tabs {
   }
 }
 
+hr {
+  background: none;
+  margin: 0;
+}
+
 .hidden {
   display: none !important;
   visibility: none !important;
