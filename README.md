@@ -1,16 +1,36 @@
-= Installation
+# Description
+
+This is a very lean jumpstart template incorporating ES 2015 JS (via Babel), Webpack, and PostCss. 
+The PostCss library follows the [SMACSS](https://smacss.com/book/) methodology for the most part, while taking 
+advantage of the features of CSS Next and related modules.
+
+[Click here for more info on how the CSS template is structured.](https://github.com/IsaacBell/Webpack-Postcss-Framework/blob/master/src/styles/app.css) 
+
+# Getting Started
 
 Install dependencies with NPM:
-  npm install 
 
-Install Webpack to bundle:
-  npm install -g webpack
+```
+npm install 
+```  
 
-And you're good to go.
+Install Webpack globally:
 
-= Usage
+```
+npm install -g webpack
+```
 
-To Bundle assets:
-  webpack --config webpack.config.js
+Bundle assets with:
 
-Run webpack-dev-server to launch a dev environment at localhost:8080. Content is served from public/
+```
+webpack --config webpack.config.js
+```
+
+# Development
+To launch a dev environment at localhost:8080. 
+
+```
+webpack-dev-server
+```
+
+Content is served from the public/ directory.
