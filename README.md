@@ -18,7 +18,8 @@ npm install
 Install Webpack globally:
 
 ```
-npm install -g webpack
+npm i -g webpack
+npm i -g webpack-dev-server
 ```
 
 Bundle assets with:
